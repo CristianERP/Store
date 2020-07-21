@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="StyleSheets.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="js/carousel.js"></script>
 </head>
 
 <body>
@@ -78,17 +79,18 @@
 
 
 
-  <div id="demo" class="carousel slide" data-ride="carousel">
+  <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
 
     <!-- Indicators -->
     <ul class="carousel-indicators">
       <li data-target="#demo" data-slide-to="0" class="active rounded-circle"></li>
       <li data-target="#demo" data-slide-to="1" class="rounded-circle"></li>
       <li data-target="#demo" data-slide-to="2" class="rounded-circle"></li>
+      <li data-target="#demo" data-slide-to="3" class="rounded-circle"></li>
     </ul>
     
     <!-- The slideshow -->
-    <div class="carousel-inner">
+    <div class="carousel-inner ">
       <div class="carousel-item active">
         <img src="https://http2.mlstatic.com/optimize/o:f_webp/resources/exhibitors/MCO-especial-home/d9942750-bfe6-11ea-868c-330e52091dc5-home-slider_desktop.jpg" alt="Los Angeles" width="100%">
       </div>
@@ -98,45 +100,126 @@
       <div class="carousel-item">
         <img src="https://http2.mlstatic.com/optimize/o:f_webp/resources/deals/exhibitors_resources/mco-home-desktop-slider-picture-684c0fb6-7efc-4498-93ed-f9c70d42669f.jpg" width="100%">
       </div>
+      <div class="carousel-item">
+        <img src="https://http2.mlstatic.com/optimize/o:f_webp/resources/deals/exhibitors_resources/mco-home-desktop-slider-picture-a3112ed6-c0ef-4e5d-a749-d503412db305.jpg" width="100%">
+      </div>
     </div>
     
     <!-- Left and right controls -->
     <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
+      <i class="fa fa-arrow-left fa-2x btn btn-dark btn-lg" aria-hidden="true"></i>
     </a>
     <a class="carousel-control-next" href="#demo" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
+      <i class="fa fa-arrow-right fa-2x btn btn-dark btn-lg" aria-hidden="true"></i>
     </a>
   </div>
 
-<!-- SEGUNDA PARTE  -->
-<div class="container marketing" style="padding-top: 2em">
 
-  <!-- Three columns of text below the carousel -->
-  <div class="row">
-    <div class="col-lg-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-      <h2>Heading</h2>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-      <h2>Heading</h2>
-      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-      <h2>Heading</h2>
-      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+
+<div class="container mt-5 mb-5">
+  <div id="producto" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+  
+          <div class="col-lg-4 proc">
+            <img class="my-2 imgproc" src="https://http2.mlstatic.com/D_Q_NP_810527-MCO42646885931_072020-AB.webp" alt="pc">
+          
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-lg-4 proc">
+            <img class="my-2 imgproc" src="https://http2.mlstatic.com/D_Q_NP_805388-MCO32468813014_102019-AB.webp" alt="">
+         
+            <h2>Heading</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-lg-4 proc">
+            <img class="my-2 imgproc" src="https://http2.mlstatic.com/D_Q_NP_695205-MCO42422694231_062020-AB.webp" alt="">
+           
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+        </div>
+      
+      </div>
+      <div class="carousel-item ">
+        <div class="row">
+  
+          <div class="col-lg-4 proc">
+            <img class="my-2 imgproc" src="https://http2.mlstatic.com/D_Q_NP_810527-MCO42646885931_072020-AB.webp" alt="">
+          
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-lg-4 proc">
+            <img class="my-2 imgproc" src="https://http2.mlstatic.com/D_Q_NP_805388-MCO32468813014_102019-AB.webp" alt="">
+         
+            <h2>Heading</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-lg-4 proc">
+            <img class="my-2 imgproc" src="https://http2.mlstatic.com/D_Q_NP_695205-MCO42422694231_062020-AB.webp" alt="">
+           
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+        </div>
+      
+      </div>
+  
     </div>
+    <a class="carousel-control-prev" href="#producto" data-slide="prev">
+      <i class="fa fa-arrow-left btn btn-dark btn-lg" aria-hidden="true"></i>
+    </a>
+    <a class="carousel-control-next" href="#producto" data-slide="next">
+      <i class="fa fa-arrow-right btn btn-lg btn-dark" aria-hidden="true"></i>
+    </a>
+  
   </div>
 
-  <footer>
-    
-  </footer>
+</div>
+
+
+
+
+
+<footer>
+  <div class="footer container">
+    <div class="row">
+      <div class="col">
+        <h1 class="text-light">Cristian</h1>
+  
+      </div>
+      <div class="col">
+        <h1 class="text-light">Jesus</h1>
+  
+      </div>
+      <div class="col">
+        <h1 class="text-light">Redes</h1>
+        <div class="btn-group-vertical">
+          <a href="#" class="btn btn-outline-light"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a>
+          <a href="#" class="btn btn-outline-light"><i class="fa fa-facebook-official" aria-hidden="true"> Faceboook</i></a>
+          <a href="#" class="btn btn-outline-light"><i class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a>
+
+        </div>
+       
+  
+      </div>
+    </div>
+   
+  </div>
+
+</footer>
+
+
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
