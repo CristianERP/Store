@@ -1,0 +1,13 @@
+header, nav{
+    background-color: rgb(16, 36, 83);
+}
+
+
+@media (max-width: 768px) { 
+
+    #titulo{
+        font-size: 1.5em;
+    }
+
+}
+
