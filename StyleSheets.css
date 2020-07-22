@@ -1,4 +1,7 @@
-header, nav{
+body{
+    background-color: lightgray;
+}
+header, nav, #navegacion{
     background-color: rgb(16, 36, 83);
 }
 footer{
@@ -6,16 +9,31 @@ footer{
     color: lightblue;
 }
 
+#container-productos{
+    overflow: visible;
+
+}
+/* Estilos para el carrusel que contiene los productos */
 .proc{
+    background-color: white;
     border: 1px solid;
     border-radius: 10px;
    
 }
 .proc:hover{
-    box-shadow: 5px 5px 9px 5px rgba(0, 0, 0, 0.5), 7px 7px 20px 7px rgba(0, 0, 0, 0.39);
-    
+    box-shadow: 0px 5px 9px 5px rgba(0, 0, 0, 0.5), 0px 7px 20px 7px rgba(0, 0, 0, 0.39);
+    z-index: 1;  
+ 
 }
 
+/* Estilos para la seccion de categorias populares */
+.categ{
+    display: block;
+    background-color:  rgb(16, 36, 83);
+    color: white;
+}
+
+/* Estilos para las imagenes de los productos */
 .imgproc{
     display: block;
     margin-left: auto;
@@ -24,7 +42,16 @@ footer{
 
 }
 
+/* Estilos para el pie de pagina */
+#footer{
+    display: none;
+}
+#buttonfooter{
+    display: block;
+    text-align: center;
+}
 
+/* Media query para tamaño medio de pantalla */
 
 @media (max-width: 768px) { 
 
@@ -33,5 +60,4 @@ footer{
     }
 
 }
-
 
