@@ -17,67 +17,77 @@
 <body>
 
   <!-- Header contiene el icono nombre y la barra de busqueda -->
-  <header>
-    <div class="container">
+  <div class="header-main">
+    
+    <header>
+      <div class="container">
+  
+        <div class="row">
+          <!-- Logo -->
+          <a class="navbar-brand" id="logo" href="#"><img src="img/logo.jpeg " class="rounded-circle my-2" alt="ES"
+              style="width: 60px;"></a>
+          <!-- Titulo -->
+          <h2 class="my-4 mr-sm-0 text-light" id="titulo">Easy Store</h2>
+          <!-- Barra de busqueda -->
+          <div class="ml-auto my-auto">
 
-      <div class="row">
-        <!-- Logo -->
-        <a class="navbar-brand" id="logo" href="#"><img src="img/logo.jpeg " class="rounded-circle my-2" alt="ES"
-            style="width: 60px;"></a>
-        <!-- Titulo -->
-        <h2 class="my-4 mr-sm-0 text-light" id="titulo">Easy Store</h2>
-        <!-- Barra de busqueda -->
-        <form class="form-inline my-2 my-lg-0 ml-auto" style="width: 60%;" id="buscador">
-          <input type="search" id="search" placeholder="Search" class="form-control m-2" style="width:80%;">
-          <button class="btn btn-warning my-2 my-sm-0" type="submit"><i class="fa fa-search"
-              aria-hidden="true"></i></button>
-        </form>
-      </div>
-    </div>
-  </header>
-
-  <nav class="navbar navbar-expand-sm navbar-dark ">
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Categoria</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Vehículos</a>
-            <a class="dropdown-item" href="#">Tecnología</a>
-            <a class="dropdown-item" href="#">Hogar y Electrodomesticos</a>
-            <a class="dropdown-item" href="#">Deporte</a>
-            <a class="dropdown-item" href="#">Belleza</a>
-            <a class="dropdown-item" href="#">Juguetes</a>
-
+            <form class="form-inline my-lg-0" id="buscador">
+              <input type="search" id="search" placeholder="Search" class="form-control mr-1" >
+              <button class="btn btn-warning my-sm-0" type="submit"><i class="fa fa-search"
+                  aria-hidden="true"></i></button>
+            </form>
           </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Historial</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Tiendas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Vender</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Ayuda</a>
-        </li>
 
-      </ul>
-    </div>
-  </nav>
+          
+        </div>
+      </div>
+    </header>
+  
+    <nav class="navbar navbar-expand-sm navbar-dark ">
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bars" aria-hidden="true"></i> Categoria</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Vehículos</a>
+              <a class="dropdown-item" href="#">Tecnología</a>
+              <a class="dropdown-item" href="#">Hogar y Electrodomesticos</a>
+              <a class="dropdown-item" href="#">Deporte</a>
+              <a class="dropdown-item" href="#">Belleza</a>
+              <a class="dropdown-item" href="#">Juguetes</a>
+  
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Historial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tiendas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vender</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ayuda</a>
+          </li>
+  
+        </ul>
+      </div>
+    </nav>
+  </div>
 
 
 
 
+<!-- Carrusel principal -->
+<div class="container-fluid">
 
   <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
-
+  
     <!-- Indicadores -->
     <ul class="carousel-indicators">
       <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -85,9 +95,9 @@
       <li data-target="#demo" data-slide-to="2" ></li>
       <li data-target="#demo" data-slide-to="3" ></li>
     </ul>
-
+  
     <!-- Carrusel -->
-    <div class="carousel-inner ">
+    <div class="carousel-inner" id="carrusel-main">
       <div class="carousel-item active">
         <img
           src="https://http2.mlstatic.com/optimize/o:f_webp/resources/exhibitors/MCO-especial-home/d9942750-bfe6-11ea-868c-330e52091dc5-home-slider_desktop.jpg"
@@ -109,7 +119,7 @@
           width="100%">
       </div>
     </div>
-
+  
     <!--Controles derecha e izquierda -->
     <a class="carousel-control-prev" href="#demo" data-slide="prev">
       <i class="fa fa-arrow-left fa-lg btn btn-dark btn-lg" aria-hidden="true"></i>
@@ -118,27 +128,27 @@
       <i class="fa fa-arrow-right fa-lg btn btn-dark btn-lg " aria-hidden="true"></i>
     </a>
   </div>
+</div>
 
 
 
+<!-- Carrusel de productos -->
   <div class="container mt-5 mb-5">
     <div id="producto" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner p-4">
+      <div class="carousel-inner p-4" id="carrusel-productos">
         <div class="carousel-item active">
           <div class="row">
 
-            <div class="col-lg-4 proc">
-              <img class="my-2 imgproc" src="https://http2.mlstatic.com/D_Q_NP_810527-MCO42646885931_072020-AB.webp"
+            <div class="col-md-4 produc">
+              <img class="my-2 imgproduc" src="https://http2.mlstatic.com/D_Q_NP_810527-MCO42646885931_072020-AB.webp"
                 alt="pc">
 
               <h2>Heading</h2>
-              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
-                vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
-                cursus magna.</p>
+              <p>.</p>
               <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
             </div>
-            <div class="col-lg-4 proc">
-              <img class="my-2 imgproc" src="https://http2.mlstatic.com/D_Q_NP_805388-MCO32468813014_102019-AB.webp"
+            <div class="col-md-4 produc">
+              <img class="my-2 imgproduc" src="https://http2.mlstatic.com/D_Q_NP_805388-MCO32468813014_102019-AB.webp"
                 alt="">
 
               <h2>Heading</h2>
@@ -147,13 +157,13 @@
                 condimentum nibh.</p>
               <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
             </div>
-            <div class="col-lg-4 proc">
-              <img class="my-2 imgproc" src="https://http2.mlstatic.com/D_Q_NP_695205-MCO42422694231_062020-AB.webp"
+            <div class="col-md-4 produc">
+              <img class="my-2 imgproduc" src="https://http2.mlstatic.com/D_Q_NP_695205-MCO42422694231_062020-AB.webp"
                 alt="">
 
               <h2>Heading</h2>
               <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula
-                porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+                porta felis euimdod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
                 fermentum massa justo sit amet risus.</p>
               <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
             </div>
@@ -163,18 +173,18 @@
         <div class="carousel-item ">
           <div class="row">
 
-            <div class="col-lg-4 proc">
-              <img class="my-2 imgproc" src="https://http2.mlstatic.com/D_Q_NP_825863-MCO31025670107_062019-AB.webp"
+            <div class="col-md-4 produc">
+              <img class="my-2 imgproduc" src="https://http2.mlstatic.com/D_Q_NP_825863-MCO31025670107_062019-AB.webp"
                 alt="">
 
               <h2>Heading</h2>
-              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euimdod. Nullam id dolor id nibh ultricies
                 vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
                 cursus magna.</p>
               <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
             </div>
-            <div class="col-lg-4 proc">
-              <img class="my-2 imgproc" src="https://http2.mlstatic.com/D_Q_NP_719607-MCO32008808117_082019-AB.webp"
+            <div class="col-md-4 produc">
+              <img class="my-2 imgproduc" src="https://http2.mlstatic.com/D_Q_NP_719607-MCO32008808117_082019-AB.webp"
                 alt="">
 
               <h2>Heading</h2>
@@ -183,8 +193,8 @@
                 condimentum nibh.</p>
               <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
             </div>
-            <div class="col-lg-4 proc">
-              <img class="my-2 imgproc" src="https://http2.mlstatic.com/D_Q_NP_732762-MCO32986538774_112019-AB.webp"
+            <div class="col-md-4 produc">
+              <img class="my-2 imgproduc" src="https://http2.mlstatic.com/D_Q_NP_732762-MCO32986538774_112019-AB.webp"
                 alt="">
 
               <h2>Heading</h2>
@@ -209,6 +219,7 @@
 
   </div>
 
+<!-- Categorias populares -->
   <div class="container mb-5">
     <h2>Categorias Populares</h2>
     <div class="row row-cols-4">
@@ -240,27 +251,53 @@
   </div>
 
 
-
+<!-- Pie de pagina -->
   <footer>
     <div class="btn btn-outline-light" id="buttonfooter">Mas Información </div>
     <div class="footer container" id="footer">
       <div class="row">
         <div class="col">
-          <h1 class="text-light">Cristian</h1>
+          <h5 class="text-light">Acerca Easy Store</h5>
+          <div>
+            <p>
+              <a href="#"  class="text-light btn">¿Quiénes Somos?</a>
+
+            </p>
+            <p>
+              <a href="#"  class="text-light btn">Para proveedores</a>
+
+            </p>
+            <p>
+              <a href="#"  class="text-light btn">Términos de Uso</a>
+
+            </p>
+          </div>
 
         </div>
         <div class="col">
-          <h1 class="text-light">Jesus</h1>
+          <h5 class="text-light">Servicios</h5>
+          <p>
+            <a href="#"  class="text-light btn">Preguntas Frecuentes</a>
+
+          </p>
+          <p>
+            <a href="#"  class="text-light btn">Aplicar mi garantía</a>
+
+          </p>
+          <p>
+            <a href="#"  class="text-light btn">Contacto</a>
+
+          </p>
 
         </div>
         <div class="col">
           <div class="dropup">
-            <button type="button" class="btn btn-outline-light dropdown-toggle my-3"
-              data-toggle="dropdown">Redes</button>
-            <div class="dropdown-menu">
-              <a href="#" class="dropdown-item"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a>
-              <a href="#" class="dropdown-item"><i class="fa fa-facebook-official" aria-hidden="true"> Faceboook</i></a>
-              <a href="#" class="dropdown-item"><i class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a>
+            <button type="button" class="btn btn-outline-light btn-block dropdown-toggle my-5"
+              data-toggle="dropdown" id="button-footer">Redes</button>
+            <div class="dropdown-menu text-center" id="redes">
+              <a href="#" class="dropdown-item btn btn-block"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a>
+              <a href="#" class="dropdown-item btn btn-block"><i class="fa fa-facebook-official" aria-hidden="true"> Faceboook</i></a>
+              <a href="#" class="dropdown-item btn btn-block"><i class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a>
 
             </div>
           </div>

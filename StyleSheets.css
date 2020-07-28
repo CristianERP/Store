@@ -1,26 +1,40 @@
 body{
-    background-color: lightgray;
+   background-color: lightskyblue;
 }
 header, nav, #navegacion{
     background-color: rgb(16, 36, 83);
 }
+.header-main{
+   
+    box-shadow: 0px 5px 9px 5px rgba(0, 0, 0, 0.5);
+}
+#carrusel-main{
+    z-index: -100;
+}
+
 footer{
     background-color: rgb(16, 36, 83);
     color: lightblue;
 }
 
-#container-productos{
-    overflow: visible;
 
-}
 /* Estilos para el carrusel que contiene los productos */
-.proc{
+#carrusel-productos a{
+    position: absolute;
+    left: 5%;  
+    bottom: 5px;
+    width: 90%;
+}
+
+.produc{
+    height: 450px;
     background-color: white;
     border: 1px solid;
     border-radius: 10px;
+    overflow-y: auto;
    
 }
-.proc:hover{
+.produc:hover{
     box-shadow: 0px 5px 9px 5px rgba(0, 0, 0, 0.5), 0px 7px 20px 7px rgba(0, 0, 0, 0.39);
     z-index: 1;  
  
@@ -33,8 +47,9 @@ footer{
     color: white;
 }
 
+
 /* Estilos para las imagenes de los productos */
-.imgproc{
+.imgproduc{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -50,6 +65,21 @@ footer{
     display: block;
     text-align: center;
 }
+#button-footer{
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#redes a:hover{
+    background-color:  rgb(16, 36, 83);
+    color: white;
+}
+#redes a:active{
+    background-color:  rgb(10, 119, 192);
+    
+}
 
 /* Media query para tamaño medio de pantalla */
 
@@ -58,6 +88,23 @@ footer{
     #titulo{
         font-size: 1.5em;
     }
+    #search{
+        width: auto;
+    }
+
 
 }
+
+
+@media (max-width: 992px) { 
+
+
+    #carrusel-productos p{
+        font-size: 15px;
+       
+       
+    }
+
+}
+
 
