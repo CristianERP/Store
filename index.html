@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="StyleSheets.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="icon" href="img/logo.jpeg" sizes="32x32">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
@@ -43,41 +44,61 @@
       </div>
     </header>
   
-    <nav class="navbar navbar-expand-sm navbar-dark ">
+    <div class="container">
+      <nav class="navbar navbar-expand-sm navbar-dark ">
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bars" aria-hidden="true"></i> Categoria</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Vehículos</a>
+                <a class="dropdown-item" href="#">Tecnología</a>
+                <a class="dropdown-item" href="#">Hogar y Electrodomesticos</a>
+                <a class="dropdown-item" href="#">Deporte</a>
+                <a class="dropdown-item" href="#">Belleza</a>
+                <a class="dropdown-item" href="#">Juguetes</a>
+                <a class="dropdown-item" href="#">Videojuegos</a>
+                <a class="dropdown-item" href="#">Rejoles</a>
+                <a class="dropdown-item" href="#">Camaras</a>
+    
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Historial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tiendas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Vender</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ayuda</a>
+            </li>
+    
+          </ul>
+        </div>
+        <div>
+          <ul class="navbar-nav">
+            <li class="navbar-item">
+              <a href="Codigo/registro.html" class="nav-link">Crear cuanta</a>
+            </li>
+            <li class="navbar-item">
+              <a href="Codigo/login.html" class="nav-link">Ingresa</a>
+            </li>
+            <li class="navbar-item">
+              <a href="" class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Carrito"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            </li>
   
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bars" aria-hidden="true"></i> Categoria</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Vehículos</a>
-              <a class="dropdown-item" href="#">Tecnología</a>
-              <a class="dropdown-item" href="#">Hogar y Electrodomesticos</a>
-              <a class="dropdown-item" href="#">Deporte</a>
-              <a class="dropdown-item" href="#">Belleza</a>
-              <a class="dropdown-item" href="#">Juguetes</a>
-  
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Historial</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Tiendas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Vender</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Ayuda</a>
-          </li>
-  
-        </ul>
-      </div>
-    </nav>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
   </div>
 
 

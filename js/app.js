@@ -18,6 +18,8 @@ $(document).ready(function () {
         $(this).css("color", "white");
         
     }); 
+
+    $('[data-toggle="tooltip"]').tooltip();
     
     });
 
