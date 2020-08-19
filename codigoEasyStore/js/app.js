@@ -18,8 +18,22 @@ $(document).ready(function () {
         $(this).css("color", "white");
         
     }); 
-
+    
+    //Tooltip Carrito
     $('[data-toggle="tooltip"]').tooltip();
+
+    //Barra de navegacion fija
+    $(window).scroll(function(){
+        var alto = $("#encabezado").height();
+        if($(this).scrollTop() > alto)
+        {
+            $('#navbar-main').addClass('header2');
+           
+        } else{
+            $('#navbar-main').removeClass('header2');
+
+        }
+    }); 
     
     });
 

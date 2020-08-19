@@ -1,0 +1,37 @@
+.jumbotron{
+	color: black;
+
+	text-transform: uppercase;
+	
+	 cursor: pointer;
+	text-align: center;
+}
+#ulver{
+list-style: none;
+padding: 0;
+margin: 0;
+float: right;
+}
+#ver{
+
+background-color: darkblue;
+color: white;
+display: block;
+margin:2px;
+padding: 6px;
+border: 1px solid black;
+border-radius: 20px;
+text-align: center;
+
+/*line-height: 25px;*/
+}
+
+@media (max-width: 767.98px) { 
+
+
+    #titulo-categoria{
+        font-size: 30px;      
+       
+    }
+
+}

@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+if(isset($_SESSION['usuario'])){
+    $user = $_SESSION['username'];
+    
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,11 +18,11 @@
   <!-- CSS bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="codigoEasyStore/css/StyleSheets.css">
+  <link rel="stylesheet" href="../css/StyleSheets.css">
   <!-- Iconos -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="icon" href="datosEasyStore/img/logo.jpeg" sizes="32x32">
+  <link rel="icon" href="../../datosEasyStore/img/logo.jpeg" sizes="32x32">
 </head>
 
 <body>
@@ -29,7 +39,7 @@
         <div class="row" id="encabezado">
           <!-- Logo -->
           <a class="navbar-brand" id="logo" href="#"><img
-              src="datosEasyStore/img/logo.jpeg"
+              src="../../datosEasyStore/img/logo.jpeg"
               class="rounded-circle my-2" alt="ES" style="width: 60px;"></a>
           <!-- Titulo -->
           <h2 class="my-4 mr-sm-0 text-light" id="titulo">Easy Store</h2>
@@ -82,12 +92,15 @@
               <a class="nav-link" href="#">Ayuda</a>
             </li>
 
-            <li class="navbar-item">
-              <a href="codigoEasyStore/registro.html" class="nav-link">Crear cuenta</a>
+            <li class="navbar-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><?php echo $user; ?> </a>
+              <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Perfil</a>   
+                  <a href="cerrar.php" class="dropdown-item">Cerrar Sesión</a>
+                  
+              </div>
             </li>
-            <li class="navbar-item">
-              <a href="codigoEasyStore/login.html" class="nav-link">Ingresa</a>
-            </li>
+
             <li class="navbar-item">
               <a href="" class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Carrito"><i
                   class="fa fa-shopping-cart" aria-hidden="true"></i></a>
@@ -117,9 +130,9 @@
       <!-- Indicadores -->
       <ul class="carousel-indicators">
         <li data-target="#carrusel" data-slide-to="0" class="active"></li>
-        <li data-target="#carrusel" data-slide-to="1" class="disabled"></li>
-        <li data-target="#carrusel" data-slide-to="2" class="disabled"></li>
-        <li data-target="#carrusel" data-slide-to="3" class="disabled"></li>
+        <li data-target="#carrusel" data-slide-to="1"></li>
+        <li data-target="#carrusel" data-slide-to="2"></li>
+        <li data-target="#carrusel" data-slide-to="3"></li>
       </ul>
 
       <!-- Carrusel -->
@@ -380,7 +393,14 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-  <script src="codigoEasyStore/js/app.js"></script>
+  <script src="../js/app.js"></script>
 </body>
 
 </html>
+
+<?php
+}
+else{
+    header('Location: ../login.html');
+}
+?>

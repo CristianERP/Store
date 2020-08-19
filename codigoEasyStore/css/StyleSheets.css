@@ -3,20 +3,76 @@ body{
 }
 
 .header-main{
+
     box-shadow: 0px 5px 9px 5px rgba(0, 0, 0, 0.5);
     background-color: rgb(16, 36, 83);
 }
+.header2{
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 100;
+    width: 100%;
+    background-color: rgb(16, 36, 83);
+}
+
+#navbar-main a:hover{
+    background-color: rgb(16, 148, 255);
+    color: white;
+    border-radius: 10px;
+}
+/* Estilos para el carrusel que contiene los productos */
+
 #carrusel-main{
     z-index: -100;
 }
 
-footer{
-    background-color: rgb(16, 36, 83);
-    color: lightblue;
+ul.carousel-indicators li,
+ul.carousel-indicators li.active {
+ 
+  width: 1%;
+  height: 10px;
+  margin: 0 1px;
+  border: none;
+  border-radius: 20px;  
+  
+}
+ul.carousel-indicators li.active {
+    background-color: yellow;
 }
 
+.prev{
+    left: 10px;
+    z-index: 100;
+    
+}
+.next{
+    right: 10px;
+    z-index: 100;
+}
 
-/* Estilos para el carrusel que contiene los productos */
+.carousel-control{
+    color: rgba(0, 0, 0, 0.5);
+   position: absolute;
+   top: 45%;
+ 
+  
+}
+.carousel-control:hover{
+    color: black;
+    
+}
+.carousel-control-prev
+{
+    position: relative;
+    top: -250px;
+}
+.carousel-control-next{
+    position: relative;
+    top: -312px;
+    left: 950px;
+}
+
 #carrusel-productos a{
     position: absolute;
     left: 5%;  
@@ -56,6 +112,10 @@ footer{
 }
 
 /* Estilos para el pie de pagina */
+footer{
+    background-color: rgb(16, 36, 83);
+    color: lightblue;
+}
 #footer{
     display: none;
 }
@@ -71,12 +131,15 @@ footer{
 }
 
 #redes a:hover{
-    background-color:  rgb(16, 36, 83);
-    color: white;
+    background-color:  rgb(16, 148, 255);
+
 }
 #redes a:active{
-    background-color:  rgb(10, 119, 192);
+    background-color:  rgb(192, 189, 10);
     
+}
+#redes a i{
+    color: rgb(255, 255, 255);
 }
 
 /* Media query para tamaño medio de pantalla */
@@ -89,17 +152,22 @@ footer{
     #search{
         width: auto;
     }
+    .carousel-control{
+        display: none;
+    }
+    .carousel-control-next,
+    .carousel-control-prev{
+        display: none;
+    }
 
 
 }
-
 
 @media (max-width: 992px) { 
 
 
     #carrusel-productos p{
-        font-size: 15px;
-       
+        font-size: 15px;      
        
     }
 
