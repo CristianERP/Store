@@ -1,0 +1,6 @@
+Camilo;Rozo;camilo@homtail.com
+Pedro;Hernandez;pedro@hotmail.com
+Patricia;Rojas;patricia@hotmail.com
+Angie;Vargas;angie@hotmail.com
+Catalina;Soto;catalina@hotmail.com
+Fernanda;Acero;fernanda@hotmail.com

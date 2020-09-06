@@ -6,7 +6,7 @@ $(document).ready(function () {
         data: {email},
         url: "php/recuperar.php",
         success: function (r) {
-          if (r == 1) { 
+          if (r == "1") { 
             alert("Por favor revise su correo.");
             location.reload();
           } else {

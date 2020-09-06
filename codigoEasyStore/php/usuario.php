@@ -1,4 +1,5 @@
 <?php
+
 class usuario{
     public function registrousuario($datos){
         $conn = new conectar();
@@ -17,6 +18,7 @@ class usuario{
         $conexion = $conn->conexion();
         $_SESSION['usuario']=$datos[0];
         $_SESSION['username'] = self :: userName($datos);
+        $_SESSION['recordar'] = $datos[2];
 
         $query = "SELECT email, password FROM usuarios WHERE email='$datos[0]' and password='$datos[1]'";
 
@@ -41,50 +43,31 @@ class usuario{
 
     }
 
-    public function recuperar($datos){
-        $conn = new conectar();
-        $conexion = $conn->conexion();
+    // public function recuperar($datos){
 
-        $query = "SELECT email FROM usuarios WHERE email='$datos[0]'";
 
-        $res = mysqli_query($conexion,$query);
+    //     $conn = new conectar();
+    //     $conexion = $conn->conexion();
 
-        if(mysqli_num_rows($res) > 0){
-            $pass = substr(md5(microtime()),1,10);
+    //     $query = "SELECT email FROM usuarios WHERE email='$datos[0]'";
 
-            $sql = "UPDATE usuarios SET password='$pass' WHERE email ='$datos[0]'";
+    //     $res = mysqli_query($conexion,$query);
 
-            $request = mysqli_query($conexion,$sql);
+    //     if(mysqli_num_rows($res) > 0){
+    //         $pass = substr(md5(microtime()),1,10);
 
-            // $to = $datos[0];
-            // $subject = "Recuperar Contraseña";
-            // $msg = "Su nueva contraseña para iniciar sesión es: ". $pass;
-            // mail($to, $subject, $msg); 
+    //         $sql = "UPDATE usuarios SET password='$pass' WHERE email ='$datos[0]'";
 
-            // return $request;
-  
-            if($request == 1){
-                $to = $datos[0];
-                $subject = "Recuperar Contraseña";
-                $msg = "Su nueva contraseña para iniciar sesión es: ". $pass;
-                mail($to, $subject, $msg); 
-                return 1;
-            }
-            else{
-                return 0;
-            }
+    //         $request = mysqli_query($conexion,$sql);
+    //         return 1;
+           
         
-        }else{
-            return 0;
-        }
+    //     }else{
+    //         return 0;
+    //     }
 
-    }
-public function correo($datos){
-    $to = $datos[0];
-    $subject = "Recuperar Contraseña";
-    $msg = "Su nueva contraseña para iniciar sesión es: ". $pass;
-    mail($to, $subject, $msg);
-}
+    // }
+
 
 
 }

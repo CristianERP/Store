@@ -1,0 +1,36 @@
+body{
+
+    background-color: rgb(16, 36, 83);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: white;
+    align-items: center;
+}
+.contenedor{
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+a{
+    display: block;
+    width: 100%;
+    max-width: 72px;
+    margin: auto;
+}
+
+#autocompletar{
+    position: relative;
+    background-color: white;
+    color: black;
+    /* top: 213px; */
+    cursor: pointer;
+    border: white;
+    width: 300px;
+    top: -740px;
+    border-radius: 2px;
+}
+#autocompletar:hover{
+    background-color: blue;
+    width: 300px;
+}
