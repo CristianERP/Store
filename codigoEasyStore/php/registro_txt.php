@@ -11,22 +11,21 @@ else
     // echo "Almacenado en: " . $_FILES["usuarios"]["tmp_name"];
     
     // abrimos el fichero con su nombre temporal (el que está en el servidor)
-    // y sólo para lectura
+
     $archivo    =   fopen($_FILES["usuarios"]["tmp_name"], "r");
     
     // creamos la conexion a la BD
     $conexion =   new mysqli("localhost", "20201B105", "iFGOkOOE10", "20201B105");
-    // como vamos a hacer una transaccion, eliminamos el autocommit
-    $conexion->autocommit(false);
+  
     
     // creamos una variable booleana que nos controle si ha existido un error en la transacción
     $errorEnTransaccion =   false;
-    // y empezamos la transacción antes de empezar a leer las líneas
     
-    // mientras haya lineas, las metemos en la variable $lineaActa
+    
+    // mientras haya lineas, las metemos en la variable $linea
     while( ($linea =   fgets($archivo)) !== false ){
             
-            // estructura de los datos: codigo_equipo_acb, nombre_equipo, ciudad 
+            
             $arrayDatos =   explode(";", $linea);
             $nombre =  $arrayDatos[0];
             $apellido =  $arrayDatos[1];   
@@ -43,10 +42,10 @@ else
            
             $fecha = date('Y-m-d');   
             
-            // ahora inserto los datos en la BD
+          
             $sql    =   "INSERT INTO usuarios (nombre, apellido, email, password, fechaRegistro)"
                     . " VALUES ('$nombre', '$apellido', '$email', '$pass', '$fecha');";
-            // echo $sql;
+        
             
             // si hay un error en la operación de inserción, marco la variable
             // de error como true
@@ -54,7 +53,7 @@ else
                 $errorEnTransaccion =   true;
             }
                 
-    } // fin del while de leer lineas
+    } 
     
     // comprobamos si ha existido error, para hacer la transacción o volver atrás
     if ($errorEnTransaccion){

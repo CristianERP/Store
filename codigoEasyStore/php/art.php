@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/StyleSheets.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="icon" href="../datosEasyStore/img/logo.jpeg" sizes="32x32">
+  <link rel="icon" href="../../datosEasyStore/img/logo.jpeg" sizes="32x32">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/StyleSheets.css">
 </head>
@@ -22,7 +22,7 @@
 
         <div class="row">
           <!-- Logo -->
-          <a class="navbar-brand" id="logo" href="../index.html"><img
+          <a class="navbar-brand" id="logo" href="../../index.html"><img
               src="../../datosEasyStore/img/logo.jpeg"
               class="rounded-circle my-2" alt="ES" style="width: 60px;"></a>
           <!-- Titulo -->
@@ -103,10 +103,10 @@
 
  
     <?php
-    include("pintamev.php"); 
+    include("pintameart.php"); 
     ?>
 
-	<div class="container" style="height: 400px">
+	<div class="container-fluid" >
 	<div class="row" >
 		<div class="col-lg-6" style="margin-bottom: 10px">
 		 <div class="">
@@ -124,7 +124,7 @@
       <!-- Carrusel -->
       <div class="carousel-inner" id="carrusel-main">
 
-        <div class="carousel-item active m-5">
+        <div class="carousel-item active mt-5">
           <img
             src="<?php echo $f1[0]; ?>"   width="100%" style="height: 300px">
         </div>
@@ -154,14 +154,30 @@
 
 
 	<div class="col-lg-6" style="margin-bottom: 10px">
-			<h1 class="my-4">Datos</h1>
-	</div>
+			<div class="container-fluid" >
+      <h1 class="my-4 text-center text-uppercase" ><?php echo $n[0]; ?></h1>
+      <p><span>PRECIO: $ </span><?php echo $pre[0]; ?> </p>
+      <p><span>DESCRIPCIÓN: </span><?php echo $des[0]; ?> </p>
+      <p><span>CANTIDAD: </span><?php echo $cant[0]; ?> </p>
+	   </div>
+  </div>
 	</div>
 	</div>
 
-		
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-  <footer>
+  <footer style="bottom: 50;">
     <div class="btn btn-outline-light" id="buttonfooter">Mas Información </div>
     <div class="footer container" id="footer">
       <div class="row">

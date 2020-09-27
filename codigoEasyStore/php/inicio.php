@@ -67,7 +67,7 @@ if(isset($_SESSION['usuario'])){
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"> Categoria</a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="codigoEasyStore/categoria.html">Vehículos</a>
+                <a class="dropdown-item" href="categoriav.php">Vehículos</a>
                 <a class="dropdown-item" href="codigoEasyStore/categoria.html">Tecnología</a>
                 <a class="dropdown-item" href="codigoEasyStore/categoria.html">Hogar y Electrodomesticos</a>
                 <a class="dropdown-item" href="codigoEasyStore/categoria.html">Deporte</a>
@@ -95,7 +95,7 @@ if(isset($_SESSION['usuario'])){
             <li class="navbar-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><?php echo $user; ?> </a>
               <div class="dropdown-menu">
-                  <a href="perfil.php" class="dropdown-item">Perfil</a>   
+                  <a href="masart.php" class="dropdown-item">Añadir Articulo</a>   
                   <a href="cerrar.php" class="dropdown-item">Cerrar Sesión</a>
                   
               </div>

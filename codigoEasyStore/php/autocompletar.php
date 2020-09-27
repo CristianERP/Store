@@ -1,33 +1,29 @@
 <?php
-require_once 'connection.php';
+
+    require_once 'connection.php';
 
 
-$conn = new conectar();
-$conexion = $conn->conexion();
+    $conn = new conectar();
+    $conexion = $conn->conexion();
 
 
-$nombres = $_POST['nombre'];
 
-if(!empty($nombres)){
-    $query = "SELECT * FROM usuarios WHERE nombre LIKE '$nombres%'";
+
+
+    $query = "SELECT * FROM usuarios";
     $result = mysqli_query($conexion, $query);
-    if(!$result){
-        die('Error de consulta '. mysqli_error($conexion));
-
+    $array = array();
+    $array2 = array();
+    if($result){
+        while($row = mysqli_fetch_array($result)){
+            $nombres = utf8_encode($row['nombre']);
+            $apellidos = utf8_encode($row['apellido']);
+            array_push($array,$nombres);
+            array_push($array2,$apellidos);
+        }
     }
-
-    $json = array();
-    while($row = mysqli_fetch_array($result)){
-        $json[] = array(
-            'id' => $row['id_usuario'],
-            'nombre' => $row['nombre'],
-            'apellido' => $row['apellido']
-        );  
-
-    }
-    $jsonstring = json_encode($json);
-    echo $jsonstring;
-
-}
+    $nombresJson = json_encode($array);
+    $apellidosJson = json_encode($array2);
+    return [$nombresJson,$apellidosJson];
 
 ?>

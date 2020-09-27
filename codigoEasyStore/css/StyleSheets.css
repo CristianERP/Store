@@ -207,8 +207,13 @@ footer{
   }
 
 
-
+/* cuadricula de categoria */
   .templade{
       display: flex;
       flex-wrap: wrap;
+      width: 100%;
+  }
+  .carta{
+      max-width: 25%;
+      min-width: 25%;
   }

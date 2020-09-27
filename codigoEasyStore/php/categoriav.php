@@ -107,11 +107,11 @@
 
 
 
-  <div class="container">
+<div class="container">
 
 
 
-  <div class="col-lg-12" style="margin-bottom: 10px">
+ 
 		
 		<div class="jumbotron mt-2" >
   		<div class="container-fluid">
@@ -128,8 +128,7 @@
 </div>
 
 			
-	
-  </div>
+
   </div>
 
 

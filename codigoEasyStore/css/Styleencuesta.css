@@ -18,19 +18,22 @@ a{
     max-width: 72px;
     margin: auto;
 }
-
-#autocompletar{
-    position: relative;
+li{
+    width: 300px;
+    border: 1px solid black;
+    list-style-type: none;
     background-color: white;
     color: black;
-    /* top: 213px; */
     cursor: pointer;
-    border: white;
-    width: 300px;
-    top: -740px;
-    border-radius: 2px;
+    margin-left: -40px;
+    padding: 0 5px;
+    border-radius: 5px;
+
 }
-#autocompletar:hover{
-    background-color: blue;
-    width: 300px;
+li:hover{
+    background-color: rgb(48, 108, 250);
+    color: white;
+}
+div[role='status']{
+    visibility: hidden;
 }

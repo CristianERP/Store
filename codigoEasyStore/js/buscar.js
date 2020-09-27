@@ -1,5 +1,6 @@
 $(buscar_datos());
 
+// Funcion que envia la palabra de busqueda
 
 function buscar_datos(buscar){
     $.ajax({

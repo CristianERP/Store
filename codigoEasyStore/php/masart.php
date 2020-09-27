@@ -18,7 +18,7 @@
     <div class="form-signin">
     <form action="articulo.php" method="post" enctype="multipart/form-data" class="" 
     >
-        <a href="../index.html"><img class="mb-4 rounded-circle"
+        <a href="inicio.php"><img class="mb-4 rounded-circle"
                 src="../../datosEasyStore/img/logo.jpeg" alt="EASY" width="72"
                 height="72 "></a>
         <h1 class="h3 mb-3 font-weight-normal">Añadir Artículo</h1>
